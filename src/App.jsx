@@ -18,8 +18,14 @@ function App() {
 
   return (
     <main className="text-white bg-black/80 min-h-screen">
-      <Location location={location} setLocation={setLocation} />
-      <ResidentList location={location} residents={location?.residents} />
+      <section>
+        <Location location={location} setLocation={setLocation} />
+      </section>
+
+      <section className="bg-[url(/images/background-page.png)] bg-cover">
+        <ResidentList location={location} residents={location?.residents} />
+      </section>
+
     </main>
   )
 }

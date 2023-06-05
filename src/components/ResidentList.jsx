@@ -18,7 +18,7 @@ const ResidentList = ({ residents, location }) => {
     <section>
 
       {/* Lista de residentes  */}
-      <section className="grid gap-8 grid-cols-[repeat(auto-fill,_280px)] justify-center max-w-[1024px] mx-auto py-6">
+      <section className="grid gap-8 grid-cols-[repeat(auto-fill,_280px)] justify-center max-w-[1024px] mx-auto py-8">
         {
           residentsInPage?.map(resident => <Residents residentUrl={resident} key={resident} />)
         }
@@ -28,7 +28,7 @@ const ResidentList = ({ residents, location }) => {
       <section className="flex justify-center gap-4 flex-wrap pb-8">
         {
           pages.map(
-            page => <button key={page} onClick={() => setCurrentPage(page)} className={`p-2 px-3 rounded-md hover:bg-red-500 ${currentPage === page ? 'bg-blue-500' : 'bg-green-600'}`}>
+            page => <button key={page} onClick={() => setCurrentPage(page)} className={`p-2 px-3 rounded-md hover:bg-black/80 ${currentPage === page ? 'bg-blue-500' : 'bg-black/10'}`}>
               {page}
             </button>
           )
