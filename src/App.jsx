@@ -3,6 +3,7 @@ import { getRandomDimension } from "./func/random"
 import axios from "axios"
 import Location from "./components/Location"
 import ResidentList from "./components/ResidentList"
+import './styles/scrollBar.css'
 
 function App() {
   const [location, setLocation] = useState(null)
@@ -17,7 +18,7 @@ function App() {
 
 
   return (
-    <main className="text-white bg-black/80 min-h-screen">
+    <main className="text-white bg-black/80 min-h-screen font-fira">
       <section>
         <Location location={location} setLocation={setLocation} />
       </section>

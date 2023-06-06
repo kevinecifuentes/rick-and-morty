@@ -28,10 +28,10 @@ const Residents = ({ residentUrl }) => {
         <div className="text-center py-4 border-b-2 border-white">
           <h2>{residentInfo?.name}</h2>
         </div>
-        <ul className="py-4 pl-2">
-          <li className="pb-2"><b className="text-gray-500 italic">Species:</b> <span>{residentInfo?.species}</span></li>
-          <li className="pb-2"><b className="text-gray-500 italic">Origin:</b> <span>{residentInfo?.origin.name}</span></li>
-          <li><b className="text-gray-500 italic">Times apper:</b> <span>{residentInfo?.episode.length}</span></li>
+        <ul className="py-4 pl-4">
+          <li className="pb-2"><b className="text-gray-400 italic">Species:</b> <span>{residentInfo?.species}</span></li>
+          <li className="pb-2"><b className="text-gray-400 italic">Origin:</b> <span>{residentInfo?.origin.name}</span></li>
+          <li><b className="text-gray-400 italic">Times apper:</b> <span>{residentInfo?.episode.length}</span></li>
         </ul>
       </section>
     </article>

@@ -31,7 +31,7 @@ const Location = ({ location, setLocation }) => {
 
       {/* Tile */}
       <div className="flex justify-center">
-        <h2 className="text-green-500 text-xl min-[700px]:text-3xl mb-10">!Welcome to the crazy universe!</h2>
+        <h2 className="text-green-500 text-xl min-[700px]:text-3xl mb-10">Wellcome to the crazy universe!</h2>
       </div>
 
       {/* Info de location */}
